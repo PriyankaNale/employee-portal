@@ -12,7 +12,7 @@ class CreateEmployee extends AbstractMigration
      */
     public function change()
     {
-        $table = $this->table('employee');
+        $table = $this->table('employees');
         $table->addColumn('name', 'string', [
             'default' => null,
             'limit' => 255,
@@ -25,7 +25,7 @@ class CreateEmployee extends AbstractMigration
         ]);
         $table->addColumn('phone_number', 'integer', [
             'default' => null,
-            'limit' => 255,
+            'limit' => 20,
             'null' => false,
         ]);
         $table->addColumn('photo', 'string', [

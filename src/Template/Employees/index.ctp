@@ -12,7 +12,7 @@
 </nav>
 <div class="employees index large-9 medium-8 columns content">
     <h3><?= __('Employees') ?></h3>
-    <div>
+    <div class="large-3">
        <?php echo $this->Form->create('Employee', array('type' => 'get'));
             echo $this->Form->input('name');
             echo $this->Form->button(__('Search'));
@@ -37,7 +37,7 @@
                 <td><?= h($employee->name) ?></td>
                 <td><?= h($employee->email) ?></td>
                 <td><?= $this->Number->format($employee->phone_number) ?></td>
-                <td><?= h($employee->photo) ?></td>
+                <td><?php echo $this->Html->image('uploads/employees/' . $employee->photo, array('size' => '100')); ?></td>                
                 <td><?= h($employee->birth_date) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $employee->id]) ?>
