@@ -7,7 +7,7 @@ Download [Composer](https://getcomposer.org/doc/00-intro.md) or update `composer
 
 
 1.Download Composer or update composer self-update. <br />
-2.Download this repository - git clone git@github.com:cakephp/bookmarker-tutorial <br />
+2.Download this repository - git clone https://github.com/PriyankaNale/employee-portal.git <br />
 3.Install dependencies with composer - composer install. <br />
 4.Add the schema to a new database. <br />
 5.Configure your database credentials in app_local.php. Run database migrations. <br />
