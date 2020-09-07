@@ -3,7 +3,6 @@
 
 ## Installation
 
-Download [Composer](https://getcomposer.org/doc/00-intro.md) or update `composer self-update`.
 
 
 1.Download Composer or update composer self-update. <br />
